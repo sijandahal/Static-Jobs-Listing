@@ -40,9 +40,7 @@ export const FetchData = () => {
           </div>
         </div>
 
-        {/* <span> {id} </span> */}
-
-        <div className="wrap flex items-center gap-4">
+        <div className="wrap flex items-center">
           <div className="role">
             <button className="btn ">{role}</button>
           </div>

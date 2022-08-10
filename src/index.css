@@ -9,23 +9,27 @@
     font-weight: 500;
     @apply bg-grayish-cyan-tablets;
   }
+
+  h1 {
+    @apply font-bold text-2xl text-grayish-cyan-700 hover:text-cyan-700 transition-colors cursor-pointer my-3;
+  }
+
+  span {
+    @apply inline-block;
+  }
+}
+
+@layer components {
+  .company--title {
+    @apply text-cyan-700 font-bold mr-4;
+  }
+
   .featured-btn {
     @apply !bg-grayish-cyan-700;
   }
 
   .btn {
-    @apply text-cyan-700 bg-grayish-cyan-tablets p-[10px] rounded-md font-bold leading-snug;
-  }
-  h1 {
-    @apply font-bold text-2xl text-grayish-cyan-700 hover:text-cyan-700 transition-colors cursor-pointer my-3;
-  }
-
-  .company--title {
-    @apply text-cyan-700 font-bold mr-4;
-  }
-
-  span {
-    @apply inline-block;
+    @apply text-cyan-700 bg-grayish-cyan-tablets p-[10px] rounded-md font-bold leading-snug mx-2 hover:bg-cyan-700 hover:text-white transition-all duration-300;
   }
   .btn-sm {
     @apply text-white bg-cyan-700 p-2 rounded-full inline-block font-bold uppercase;
