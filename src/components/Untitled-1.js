@@ -1,8 +1,5 @@
-import React from "react";
-import jobLists from "./data.json";
-
-export const FetchData = () => {
-  return jobLists.map((jobList) => {
+ return jobLists.map((jobList) => {
+    
     const {
       id,
       company,
@@ -29,10 +26,10 @@ export const FetchData = () => {
             <span className="company--title">{company}</span>
             {jobList.new ? <span className="btn-sm"> New </span> : null}
             {jobList.featured ? (
-              <span className="btn-sm featured-btn ml-2"> Featured </span>
+              <span className="ml-2 btn-sm featured-btn"> Featured </span>
             ) : null}
             <h1> {position}</h1>
-            <div className="job-details flex gap-9">
+            <div className="flex job-details gap-9">
               <span className="postedat">{postedAt}</span>
               <span className="contract">{contract}</span>
               <span className="location">{location}</span>
@@ -40,7 +37,7 @@ export const FetchData = () => {
           </div>
         </div>
 
-        <div className="wrap flex items-center">
+        <div className="flex items-center wrap">
           <div className="role">
             <button className="btn ">{role}</button>
           </div>
@@ -76,4 +73,3 @@ export const FetchData = () => {
       </div>
     );
   });
-};
